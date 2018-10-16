@@ -9,7 +9,7 @@ namespace BgModel
     public class Game
     {
         private Board board;
-        private readonly Dice[] dices = new Dice[2];
+        private readonly Dice[] dices = new Dice[2] { new Dice(), new Dice() };
         private readonly List<int> remainingMoves = new List<int>(4);
 
         public Checker.CheckerColor CurrentPlayer { get; set; }
@@ -20,6 +20,8 @@ namespace BgModel
         {
             board = Board.Instance;
         }
+
+        public Board Board { get { return board; } }
 
         public bool NewGame()
         {

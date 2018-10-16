@@ -4,7 +4,7 @@ namespace BgModel
 {
     public class Dice
     {
-        Random rng = new Random();
+        static private Random rng = new Random();
 
         public int Value { get; private set; }
 

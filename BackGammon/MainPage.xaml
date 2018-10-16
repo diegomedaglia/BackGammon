@@ -8,9 +8,8 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-   
-    
-    <Border Height="440" Width="740" BorderBrush="Brown" BorderThickness="20" CornerRadius="20,20,20,20">
+    <Border BorderBrush="Brown" BorderThickness="20" CornerRadius="10" Height="440" Width="790">
+    <StackPanel Orientation="Horizontal">
         <Grid x:Name="grid" ColumnSpacing="0" Background="#FF1D830D" Width="700" Height="400">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
@@ -70,11 +69,12 @@
             <!--#endregion-->
             
             <!--#region checkers-->
-            <Ellipse x:Name="checker0" Fill="Red" Stroke="Black" Width="40" Height="40" Grid.Row="0" Grid.Column="0" CanDrag="True" DragStarting="Ellipse_DragStarting" Canvas.ZIndex="2" >
+            <Ellipse x:Name="red0" Fill="Red" Stroke="Black" Width="40" Height="40" Grid.Row="0" Grid.Column="0" CanDrag="True" DragStarting="Ellipse_DragStarting" Canvas.ZIndex="2" >
                 <Ellipse.RenderTransform>
                     <TranslateTransform Y="-80"></TranslateTransform>
                 </Ellipse.RenderTransform>
             </Ellipse>
+            
             <!--#endregion-->
             
             <!--#region Board drawing-->
@@ -110,5 +110,13 @@
             <!--#endregion-->
             
         </Grid>
+        <StackPanel Orientation="Vertical" Height="400">
+            <Rectangle Fill="Brown" Height="40" Width="50" />
+            <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="140" Width="50" />
+            <Rectangle Fill="Brown" Height="40" Width="50" />
+            <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="140" Width="50" />
+            <Rectangle Fill="Brown" Height="40" Width="50" />
+        </StackPanel>
+    </StackPanel>
     </Border>
 </Page>

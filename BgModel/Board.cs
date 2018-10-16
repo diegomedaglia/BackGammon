@@ -37,6 +37,32 @@ namespace BgModel
             }
         }
 
+        public List<Checker> Checkers
+        {
+            get
+            {
+                List<Checker> list = new List<Checker>();
+                foreach (var point in points)
+                {
+                    list.AddRange(point);
+                }
+                return list;
+            }
+        }
+
+        public List<Checker> GetPoint(int point)
+        {
+            List<Checker> ret = null;
+
+            if (point >= 0 && point < 24)
+            {
+                ret = points[point];
+            }
+
+            return ret;
+        }
+
+
         public bool IsPointMade(int point)
         {
             bool ret = false;
