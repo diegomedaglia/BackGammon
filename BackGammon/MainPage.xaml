@@ -10,9 +10,9 @@
 
     <Border BorderBrush="Brown" BorderThickness="20" CornerRadius="10" Height="440" Width="790">
     <StackPanel Orientation="Horizontal">
-        <Grid x:Name="grid" ColumnSpacing="0" Background="#FF1D830D" Width="700" Height="400">
+        <Grid x:Name="grid" Background="#FF1D830D" Width="700" Height="400">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
+                <ColumnDefinition MaxWidth="100" />
                 <ColumnDefinition/>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -31,16 +31,16 @@
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
-            <Grid.Resources>
+            <!--<Grid.Resources>
                 <Style x:Key="TransparentRectangle" TargetType="Rectangle">
                     <Setter Property="AllowDrop" Value="True" />
                     <Setter Property="Fill" Value="Transparent" />
                     <Setter Property="Canvas.ZIndex" Value="1" />
                 </Style>
-            </Grid.Resources>
+            </Grid.Resources>-->
             <!--#region Rectangles that act as the Grid cells-->
 
-            <Rectangle x:Name="r0c0" Grid.Row="0" Grid.Column="0"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}" />
+            <!--<Rectangle x:Name="r0c0" Grid.Row="0" Grid.Column="0"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}" />
             <Rectangle x:Name="r0c1" Grid.Row="0" Grid.Column="1"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
             <Rectangle x:Name="r0c2" Grid.Row="0" Grid.Column="2"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
             <Rectangle x:Name="r0c3" Grid.Row="0" Grid.Column="3"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
@@ -66,18 +66,21 @@
             <Rectangle x:Name="r1c11" Grid.Row="1" Grid.Column="11"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
             <Rectangle x:Name="r1c12" Grid.Row="1" Grid.Column="12"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
 
-            <!--#endregion-->
+            --><!--#endregion-->
             
-            <!--#region checkers-->
+            <!--#region checkers--><!--
             <Ellipse x:Name="red0" Fill="Red" Stroke="Black" Width="40" Height="40" Grid.Row="0" Grid.Column="0" CanDrag="True" DragStarting="Ellipse_DragStarting" Canvas.ZIndex="2" >
                 <Ellipse.RenderTransform>
                     <TranslateTransform Y="-80"></TranslateTransform>
                 </Ellipse.RenderTransform>
             </Ellipse>
             
-            <!--#endregion-->
-            
-            <!--#region Board drawing-->
+            --><!--#endregion-->
+
+                <local:BGPoint Grid.Column="0" TriangleFill="White" TopRow="False" />
+                <local:BGPoint Grid.Column="1" TriangleFill="Black" TopRow="True" />
+
+                <!--#region Board drawing--><!--
             
             <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" />
             <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top"  />
@@ -105,7 +108,7 @@
             <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="9" VerticalAlignment="Bottom" />
             <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="10" VerticalAlignment="Bottom" />
             <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="11" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="12" VerticalAlignment="Bottom" />
+            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="12" VerticalAlignment="Bottom" />-->
 
             <!--#endregion-->
             
