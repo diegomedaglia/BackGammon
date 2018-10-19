@@ -11,7 +11,7 @@
     x:Name="BGPointcontrol"
     >
     <Canvas>
-        <Polygon Points="0,0,50,300,100,0" Fill="{Binding TriangleFill, ElementName=BGPointcontrol}" Stroke="Black" />
+        <Polygon Points="0,0,50,300,100,0" Fill="{Binding TriangleFill, ElementName=BGPointcontrol}" Stroke="Black" StrokeThickness="3" Margin="0,0,0,0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
         <Rectangle Canvas.ZIndex="1" Width="100" Height="400" Fill="Transparent" />
     </Canvas>
 </UserControl>

@@ -31,44 +31,50 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-
-
-                <local:BGPoint Grid.Column="0" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="1" TriangleFill="Black" TopRow="True" />
-                <local:BGPoint Grid.Column="2" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="3" TriangleFill="Black" TopRow="True" />
-                <local:BGPoint Grid.Column="4" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="5" TriangleFill="Black" TopRow="True" />
-                <local:BGPoint Grid.Column="7" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="8" TriangleFill="Black" TopRow="True" />
-                <local:BGPoint Grid.Column="9" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="10" TriangleFill="Black" TopRow="True" />
-                <local:BGPoint Grid.Column="11" TriangleFill="White" TopRow="True" />
-                <local:BGPoint Grid.Column="12" TriangleFill="Black" TopRow="True" />
+                <local:BGPoint Grid.Column="0"  TriangleFill="White" TopRow="True" PointNumber="11" />
+                <local:BGPoint Grid.Column="1"  TriangleFill="Black" TopRow="True" PointNumber="10" />
+                <local:BGPoint Grid.Column="2"  TriangleFill="White" TopRow="True" PointNumber="9"  />
+                <local:BGPoint Grid.Column="3"  TriangleFill="Black" TopRow="True" PointNumber="8"  />
+                <local:BGPoint Grid.Column="4"  TriangleFill="White" TopRow="True" PointNumber="7"  />
+                <local:BGPoint Grid.Column="5"  TriangleFill="Black" TopRow="True" PointNumber="6"  />
+                <local:BGPoint Grid.Column="7"  TriangleFill="White" TopRow="True" PointNumber="5"  />
+                <local:BGPoint Grid.Column="8"  TriangleFill="Black" TopRow="True" PointNumber="4"  />
+                <local:BGPoint Grid.Column="9"  TriangleFill="White" TopRow="True" PointNumber="3"  />
+                <local:BGPoint Grid.Column="10" TriangleFill="Black" TopRow="True" PointNumber="2"  />
+                <local:BGPoint Grid.Column="11" TriangleFill="White" TopRow="True" PointNumber="1"  />
+                <local:BGPoint Grid.Column="12" TriangleFill="Black" TopRow="True" PointNumber="0"  />
 
                 <Rectangle Grid.Row="0" Grid.Column="6" Grid.RowSpan="2" Fill="Brown" />
 
-                <local:BGPoint Grid.Column="0" Grid.Row="1" TriangleFill="Black"  TopRow="False" />
-                <local:BGPoint Grid.Column="1" Grid.Row="1" TriangleFill="White"  TopRow="False" />
-                <local:BGPoint Grid.Column="2" Grid.Row="1" TriangleFill="Black"  TopRow="False" />
-                <local:BGPoint Grid.Column="3" Grid.Row="1" TriangleFill="White"  TopRow="False" />
-                <local:BGPoint Grid.Column="4" Grid.Row="1" TriangleFill="Black"  TopRow="False" />
-                <local:BGPoint Grid.Column="5" Grid.Row="1" TriangleFill="White"  TopRow="False" />
-                <local:BGPoint Grid.Column="7" Grid.Row="1" TriangleFill="Black"  TopRow="False" />
-                <local:BGPoint Grid.Column="8" Grid.Row="1" TriangleFill="White"  TopRow="False" />
-                <local:BGPoint Grid.Column="9" Grid.Row="1" TriangleFill="Black"  TopRow="False" />
-                <local:BGPoint Grid.Column="10" Grid.Row="1" TriangleFill="White" TopRow="False" />
-                <local:BGPoint Grid.Column="11" Grid.Row="1" TriangleFill="Black" TopRow="False" />
-                <local:BGPoint Grid.Column="12" Grid.Row="1" TriangleFill="White" TopRow="False" />
-
+                <local:BGPoint Grid.Column="0"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="12" />
+                <local:BGPoint Grid.Column="1"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="13" />
+                <local:BGPoint Grid.Column="2"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="14" />
+                <local:BGPoint Grid.Column="3"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="15" />
+                <local:BGPoint Grid.Column="4"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="16" />
+                <local:BGPoint Grid.Column="5"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="17" />
+                <local:BGPoint Grid.Column="7"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="18" />
+                <local:BGPoint Grid.Column="8"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="19" />
+                <local:BGPoint Grid.Column="9"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="20" />
+                <local:BGPoint Grid.Column="10" Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="21" />
+                <local:BGPoint Grid.Column="11" Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="2"  />
+                <local:BGPoint Grid.Column="12" Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="23" />
 
             </Grid>
             <StackPanel Orientation="Vertical" Height="800">
-                <Rectangle Fill="Brown" Height="106" Width="100" /> <!--space for doubling cube top row-->
-                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" /> <!--Top row bear off-->
-                <Rectangle Fill="Brown" Height="108" Width="100" /> <!--space for doubling cube centered-->
-                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" /> <!--Bottom row bear off-->
-                <Rectangle Fill="Brown" Height="106" Width="100" /> <!--space for doubling cube bottom row-->
+                <!--space for doubling cube top row-->
+                <Rectangle Fill="Brown" Height="106" Width="100" />
+                
+                <!--Top row bear off-->
+                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" />
+
+                <!--space for doubling cube centered-->
+                <Rectangle Fill="Brown" Height="108" Width="100" />
+                
+                <!--Bottom row bear off-->
+                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" />
+
+                <!--space for doubling cube bottom row-->
+                <Rectangle Fill="Brown" Height="106" Width="100" />
             </StackPanel>
         </StackPanel>
     </Border>
