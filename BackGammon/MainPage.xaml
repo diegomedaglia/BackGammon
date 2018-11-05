@@ -8,115 +8,74 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Border BorderBrush="Brown" BorderThickness="20" CornerRadius="10" Height="440" Width="790">
-    <StackPanel Orientation="Horizontal">
-        <Grid x:Name="grid" ColumnSpacing="0" Background="#FF1D830D" Width="700" Height="400">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+    <Border BorderBrush="Brown" BorderThickness="20" CornerRadius="10" Height="840" Width="1440">
+        <StackPanel Orientation="Horizontal">
+            <Grid x:Name="grid" Background="#FF1D830D" Width="1300" Height="800">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
-            <Grid.Resources>
-                <Style x:Key="TransparentRectangle" TargetType="Rectangle">
-                    <Setter Property="AllowDrop" Value="True" />
-                    <Setter Property="Fill" Value="Transparent" />
-                    <Setter Property="Canvas.ZIndex" Value="1" />
-                </Style>
-            </Grid.Resources>
-            <!--#region Rectangles that act as the Grid cells-->
+                <local:BGPoint Grid.Column="0"  TriangleFill="White" TopRow="True" PointNumber="11" />
+                <local:BGPoint Grid.Column="1"  TriangleFill="Black" TopRow="True" PointNumber="10" />
+                <local:BGPoint Grid.Column="2"  TriangleFill="White" TopRow="True" PointNumber="9"  />
+                <local:BGPoint Grid.Column="3"  TriangleFill="Black" TopRow="True" PointNumber="8"  />
+                <local:BGPoint Grid.Column="4"  TriangleFill="White" TopRow="True" PointNumber="7"  />
+                <local:BGPoint Grid.Column="5"  TriangleFill="Black" TopRow="True" PointNumber="6"  />
+                <local:BGPoint Grid.Column="7"  TriangleFill="White" TopRow="True" PointNumber="5"  />
+                <local:BGPoint Grid.Column="8"  TriangleFill="Black" TopRow="True" PointNumber="4"  />
+                <local:BGPoint Grid.Column="9"  TriangleFill="White" TopRow="True" PointNumber="3"  />
+                <local:BGPoint Grid.Column="10" TriangleFill="Black" TopRow="True" PointNumber="2"  />
+                <local:BGPoint Grid.Column="11" TriangleFill="White" TopRow="True" PointNumber="1"  />
+                <local:BGPoint Grid.Column="12" TriangleFill="Black" TopRow="True" PointNumber="0"  />
 
-            <Rectangle x:Name="r0c0" Grid.Row="0" Grid.Column="0"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}" />
-            <Rectangle x:Name="r0c1" Grid.Row="0" Grid.Column="1"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c2" Grid.Row="0" Grid.Column="2"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c3" Grid.Row="0" Grid.Column="3"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c4" Grid.Row="0" Grid.Column="4"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c5" Grid.Row="0" Grid.Column="5"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c7" Grid.Row="0" Grid.Column="7"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c8" Grid.Row="0" Grid.Column="8"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c9" Grid.Row="0" Grid.Column="9"   DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}" />
-            <Rectangle x:Name="r0c10" Grid.Row="0" Grid.Column="10"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c11" Grid.Row="0" Grid.Column="11"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r0c12" Grid.Row="0" Grid.Column="12"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
+                <Rectangle Grid.Row="0" Grid.Column="6" Grid.RowSpan="2" Fill="Brown" />
 
-            <Rectangle x:Name="r1c0"  Grid.Row="1" Grid.Column="0"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}" />
-            <Rectangle x:Name="r1c1"  Grid.Row="1" Grid.Column="1"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c2"  Grid.Row="1" Grid.Column="2"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c3"  Grid.Row="1" Grid.Column="3"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c4"  Grid.Row="1" Grid.Column="4"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c5"  Grid.Row="1" Grid.Column="5"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c7"  Grid.Row="1" Grid.Column="7"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c8"  Grid.Row="1" Grid.Column="8"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c9"  Grid.Row="1" Grid.Column="9"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave"  Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c10" Grid.Row="1" Grid.Column="10"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c11" Grid.Row="1" Grid.Column="11"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
-            <Rectangle x:Name="r1c12" Grid.Row="1" Grid.Column="12"  DragEnter="Rectangle_DragEnter" DragLeave="Rectangle_DragLeave" Drop="Rectangle_Drop" Style="{StaticResource TransparentRectangle}"/>
+                <local:BGPoint Grid.Column="0"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="12" />
+                <local:BGPoint Grid.Column="1"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="13" />
+                <local:BGPoint Grid.Column="2"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="14" />
+                <local:BGPoint Grid.Column="3"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="15" />
+                <local:BGPoint Grid.Column="4"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="16" />
+                <local:BGPoint Grid.Column="5"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="17" />
+                <local:BGPoint Grid.Column="7"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="18" />
+                <local:BGPoint Grid.Column="8"  Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="19" />
+                <local:BGPoint Grid.Column="9"  Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="20" />
+                <local:BGPoint Grid.Column="10" Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="21" />
+                <local:BGPoint Grid.Column="11" Grid.Row="1" TriangleFill="Black" TopRow="False" PointNumber="2"  />
+                <local:BGPoint Grid.Column="12" Grid.Row="1" TriangleFill="White" TopRow="False" PointNumber="23" />
 
-            <!--#endregion-->
-            
-            <!--#region checkers-->
-            <Ellipse x:Name="red0" Fill="Red" Stroke="Black" Width="40" Height="40" Grid.Row="0" Grid.Column="0" CanDrag="True" DragStarting="Ellipse_DragStarting" Canvas.ZIndex="2" >
-                <Ellipse.RenderTransform>
-                    <TranslateTransform Y="-80"></TranslateTransform>
-                </Ellipse.RenderTransform>
-            </Ellipse>
-            
-            <!--#endregion-->
-            
-            <!--#region Board drawing-->
-            
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top"  />
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top"  />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="3" VerticalAlignment="Top" />
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="4" VerticalAlignment="Top" />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="5" VerticalAlignment="Top" />
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="7" VerticalAlignment="Top" />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="8" VerticalAlignment="Top" />
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="9" VerticalAlignment="Top" />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="10" VerticalAlignment="Top" />
-            <Polygon Fill="White" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="11" VerticalAlignment="Top" />
-            <Polygon Fill="Black" Points="0,0,27,160,54,0" Stroke="Black" Grid.Row="0" Grid.Column="12" VerticalAlignment="Top" />
+            </Grid>
+            <StackPanel Orientation="Vertical" Height="800">
+                <!--space for doubling cube top row-->
+                <Rectangle Fill="Brown" Height="106" Width="100" />
+                
+                <!--Top row bear off-->
+                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" />
 
-            <Rectangle Fill="Brown" Grid.Row="0" Grid.Column="6" Grid.RowSpan="2" Width="54"/>
+                <!--space for doubling cube centered-->
+                <Rectangle Fill="Brown" Height="108" Width="100" />
+                
+                <!--Bottom row bear off-->
+                <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="240" Width="100" />
 
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="0" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" />
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="3" VerticalAlignment="Bottom" />
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="4" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="5" VerticalAlignment="Bottom" />
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="7" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="8" VerticalAlignment="Bottom" />
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="9" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="10" VerticalAlignment="Bottom" />
-            <Polygon Fill="Black" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="11" VerticalAlignment="Bottom" />
-            <Polygon Fill="White" Points="0,200,27,40,54,200" Stroke="Black" Grid.Row="1" Grid.Column="12" VerticalAlignment="Bottom" />
-
-            <!--#endregion-->
-            
-        </Grid>
-        <StackPanel Orientation="Vertical" Height="400">
-            <Rectangle Fill="Brown" Height="40" Width="50" />
-            <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="140" Width="50" />
-            <Rectangle Fill="Brown" Height="40" Width="50" />
-            <Rectangle Fill="RosyBrown" Stroke="Brown" StrokeThickness="5" Height="140" Width="50" />
-            <Rectangle Fill="Brown" Height="40" Width="50" />
+                <!--space for doubling cube bottom row-->
+                <Rectangle Fill="Brown" Height="106" Width="100" />
+            </StackPanel>
         </StackPanel>
-    </StackPanel>
     </Border>
 </Page>
